@@ -21,9 +21,9 @@ class KPhoenRulerZExtension extends Extension
         $loader->load('rulerz.yml');
         $loader->load('validators.yml');
 
-//        if ($config['debug']) {
-//            $loader->load('debug.yml');
-//        }
+        if ($config['debug']) {
+            $loader->load('debug.yml');
+        }
 
         $this->configureCache($container, $config);
         $this->configureExecutors($loader, $config);
